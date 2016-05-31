@@ -1,0 +1,392 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.erts_lab.bluefire2.SensorReadingFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:background="#ffffffff"
+        >
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gridLayout"
+            android:paddingTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imageView"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/w_l_left"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:text="Left White Line |"
+                android:textSize="12dp"
+                android:textColor="#ffef2512" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/w_l_middle"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:text=" Middle White Line |"
+                android:textSize="12dp"
+                android:textColor="#ffef2512" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/w_l_right"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:text=" Right White Line "
+                android:textSize="12dp"
+                android:textColor="#ffef2512" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/w_l_left_value"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:text=" value "
+                android:textColor="#ff2bd9ff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/w_l_middle_value"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:text=" value "
+                android:textColor="#ff2bd9ff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/w_l_right_value"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:text=" value "
+                android:textColor="#ff2bd9ff" />
+
+        </GridLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/sensors_image"
+            android:background="#ffffffff"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IR Proximity 3"
+            android:id="@+id/ir3"
+            android:textColor="#ffef2512"
+            android:layout_marginTop="52dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IR Proximity 4"
+            android:id="@+id/ir4"
+            android:textColor="#ffef2512"
+            android:layout_below="@+id/ir3"
+            android:layout_alignRight="@+id/imageView"
+            android:layout_alignEnd="@+id/imageView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IR Proximity 5"
+            android:id="@+id/ir5"
+            android:textColor="#ffef2512"
+            android:layout_alignTop="@+id/ir1"
+            android:layout_alignRight="@+id/imageView"
+            android:layout_alignEnd="@+id/imageView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IR Proximity 6"
+            android:id="@+id/ir6"
+            android:layout_marginBottom="72dp"
+            android:textColor="#ffef2512"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_alignRight="@+id/imageView"
+            android:layout_alignEnd="@+id/imageView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IR Proximity 7"
+            android:id="@+id/ir7"
+            android:textColor="#ffef2512"
+            android:layout_alignTop="@+id/ir6"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IR Proximity 8"
+            android:id="@+id/ir8"
+            android:textColor="#ffef2512"
+            android:layout_alignBaseline="@+id/ir7"
+            android:layout_alignBottom="@+id/ir7"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IR Proximity 1"
+            android:id="@+id/ir1"
+            android:textColor="#ffef2512"
+            android:layout_below="@+id/ir2_value"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="87dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IR Proximity 2"
+            android:id="@+id/ir2"
+            android:textColor="#ffef2512"
+            android:layout_alignBaseline="@+id/ir4"
+            android:layout_alignBottom="@+id/ir4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="value"
+            android:id="@+id/ir2_value"
+            android:layout_below="@+id/ir2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#ff2bd9ff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="value"
+            android:id="@+id/ir3_value"
+            android:layout_alignTop="@+id/ir2"
+            android:layout_alignLeft="@+id/ir7_value"
+            android:layout_alignStart="@+id/ir7_value"
+            android:textColor="#ff2bd9ff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="value"
+            android:id="@+id/ir4_value"
+            android:layout_below="@+id/ir4"
+            android:layout_alignRight="@+id/imageView"
+            android:layout_alignEnd="@+id/imageView"
+            android:textColor="#ff2bd9ff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="value"
+            android:id="@+id/ir1_value"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#ff2bd9ff"
+            android:layout_below="@+id/ir1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="value"
+            android:id="@+id/ir8_value"
+            android:layout_below="@+id/ir8"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#ff2bd9ff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="value"
+            android:id="@+id/ir7_value"
+            android:layout_below="@+id/ir7"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ff2bd9ff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="value"
+            android:id="@+id/ir6_value"
+            android:layout_alignTop="@+id/ir7_value"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#ff2bd9ff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="value"
+            android:id="@+id/ir5_value"
+            android:layout_alignTop="@+id/ir1_value"
+            android:layout_alignRight="@+id/imageView"
+            android:layout_alignEnd="@+id/imageView"
+            android:textColor="#ff2bd9ff" />
+
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gridLayoutSharpIR"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/gridLayout"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sharp_1"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:text="Sharp IR 1 |"
+                android:textSize="12dp"
+                android:textColor="#ffef2512" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sharp_2"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:text="Sharp IR 2 |"
+                android:textSize="12dp"
+                android:textColor="#ffef2512" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sharp_3"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:text="Sharp IR 3 |"
+                android:textSize="12dp"
+                android:textColor="#ffef2512" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sharp_4"
+                android:layout_row="2"
+                android:layout_column="3"
+                android:text="Sharp IR 4 |"
+                android:textSize="12dp"
+                android:textColor="#ffef2512" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sharp_5"
+                android:layout_row="2"
+                android:layout_column="4"
+                android:text="Sharp IR 5"
+                android:textSize="12dp"
+                android:textColor="#ffef2512" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sharp_1_value"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:text=" value "
+                android:textColor="#ff2bd9ff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sharp_2_value"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:text=" value "
+                android:textColor="#ff2bd9ff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sharp_3_value"
+                android:layout_row="3"
+                android:layout_column="2"
+                android:text=" value "
+                android:textColor="#ff2bd9ff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sharp_4_value"
+                android:layout_row="3"
+                android:layout_column="3"
+                android:text=" value "
+                android:textColor="#ff2bd9ff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sharp_5_value"
+                android:layout_row="3"
+                android:layout_column="4"
+                android:text=" value "
+                android:textColor="#ff2bd9ff" />
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gridLayoutBattVoltage"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/gridLayoutSharpIR"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/batt_voltage"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:text="Battery Voltage --> "
+                android:textSize="12dp"
+                android:textColor="#ffef2512" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/batt_voltage_value"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:text=" value "
+                android:textColor="#ff2bd9ff" />
+
+        </GridLayout>
+    </RelativeLayout>
+</ScrollView>

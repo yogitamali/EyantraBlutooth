@@ -1,0 +1,1166 @@
+
+FirebirdBluetooth.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000006e0  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .bss          00000032  00800200  00800200  00000754  2**0
+                  ALLOC
+  2 .stab         000006e4  00000000  00000000  00000754  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  3 .stabstr      00000085  00000000  00000000  00000e38  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_aranges 00000080  00000000  00000000  00000ec0  2**3
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   000009f1  00000000  00000000  00000f40  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000267  00000000  00000000  00001931  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000495  00000000  00000000  00001b98  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  000001cc  00000000  00000000  00002030  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    000003c4  00000000  00000000  000021fc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000001b5  00000000  00000000  000025c0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 72 00 	jmp	0xe4	; 0xe4 <__ctors_end>
+   4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+   8:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+   c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  10:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  14:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  18:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  1c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  20:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  24:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  28:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  2c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  30:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  34:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  38:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  3c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  40:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  44:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  48:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  4c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  50:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  54:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  58:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  5c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  60:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  64:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  68:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  6c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  70:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  74:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  78:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  7c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  80:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  84:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  88:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  8c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  90:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  94:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  98:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  9c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  a0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  a4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  a8:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  ac:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  b0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  b4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  b8:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  bc:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  c0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  c4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  c8:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  cc:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  d0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  d4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  d8:	0c 94 51 01 	jmp	0x2a2	; 0x2a2 <__vector_54>
+  dc:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+  e0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
+
+000000e4 <__ctors_end>:
+  e4:	11 24       	eor	r1, r1
+  e6:	1f be       	out	0x3f, r1	; 63
+  e8:	cf ef       	ldi	r28, 0xFF	; 255
+  ea:	d1 e2       	ldi	r29, 0x21	; 33
+  ec:	de bf       	out	0x3e, r29	; 62
+  ee:	cd bf       	out	0x3d, r28	; 61
+  f0:	00 e0       	ldi	r16, 0x00	; 0
+  f2:	0c bf       	out	0x3c, r16	; 60
+
+000000f4 <__do_copy_data>:
+  f4:	12 e0       	ldi	r17, 0x02	; 2
+  f6:	a0 e0       	ldi	r26, 0x00	; 0
+  f8:	b2 e0       	ldi	r27, 0x02	; 2
+  fa:	e0 ee       	ldi	r30, 0xE0	; 224
+  fc:	f6 e0       	ldi	r31, 0x06	; 6
+  fe:	00 e0       	ldi	r16, 0x00	; 0
+ 100:	0b bf       	out	0x3b, r16	; 59
+ 102:	02 c0       	rjmp	.+4      	; 0x108 <__do_copy_data+0x14>
+ 104:	07 90       	elpm	r0, Z+
+ 106:	0d 92       	st	X+, r0
+ 108:	a0 30       	cpi	r26, 0x00	; 0
+ 10a:	b1 07       	cpc	r27, r17
+ 10c:	d9 f7       	brne	.-10     	; 0x104 <__do_copy_data+0x10>
+
+0000010e <__do_clear_bss>:
+ 10e:	12 e0       	ldi	r17, 0x02	; 2
+ 110:	a0 e0       	ldi	r26, 0x00	; 0
+ 112:	b2 e0       	ldi	r27, 0x02	; 2
+ 114:	01 c0       	rjmp	.+2      	; 0x118 <.do_clear_bss_start>
+
+00000116 <.do_clear_bss_loop>:
+ 116:	1d 92       	st	X+, r1
+
+00000118 <.do_clear_bss_start>:
+ 118:	a2 33       	cpi	r26, 0x32	; 50
+ 11a:	b1 07       	cpc	r27, r17
+ 11c:	e1 f7       	brne	.-8      	; 0x116 <.do_clear_bss_loop>
+ 11e:	0e 94 0e 03 	call	0x61c	; 0x61c <main>
+ 122:	0c 94 6e 03 	jmp	0x6dc	; 0x6dc <_exit>
+
+00000126 <__bad_interrupt>:
+ 126:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000012a <spi_pin_config>:
+ *
+ */
+
+void spi_pin_config (void)
+{
+	DDRB = DDRB | 0x07;
+ 12a:	84 b1       	in	r24, 0x04	; 4
+ 12c:	87 60       	ori	r24, 0x07	; 7
+ 12e:	84 b9       	out	0x04, r24	; 4
+	PORTB = PORTB | 0x07;
+ 130:	85 b1       	in	r24, 0x05	; 5
+ 132:	87 60       	ori	r24, 0x07	; 7
+ 134:	85 b9       	out	0x05, r24	; 5
+}
+ 136:	08 95       	ret
+
+00000138 <adc_pin_config>:
+ *
+ */
+
+void adc_pin_config (void)
+{
+	DDRF = 0x00; //set PORTF direction as input
+ 138:	10 ba       	out	0x10, r1	; 16
+	PORTF = 0x00; //set PORTF pins floating
+ 13a:	11 ba       	out	0x11, r1	; 17
+	DDRK = 0x00; //set PORTK direction as input
+ 13c:	10 92 07 01 	sts	0x0107, r1
+	PORTK = 0x00; //set PORTK pins floating
+ 140:	10 92 08 01 	sts	0x0108, r1
+}
+ 144:	08 95       	ret
+
+00000146 <adc_init>:
+ * Example Call:	<adc_init()>
+ *
+ */
+void adc_init()
+{
+	ADCSRA = 0x00;
+ 146:	ea e7       	ldi	r30, 0x7A	; 122
+ 148:	f0 e0       	ldi	r31, 0x00	; 0
+ 14a:	10 82       	st	Z, r1
+	ADCSRB = 0x00;		//MUX5 = 0
+ 14c:	10 92 7b 00 	sts	0x007B, r1
+	ADMUX = 0x20;		//Vref=5V external --- ADLAR=1 --- MUX4:0 = 0000
+ 150:	80 e2       	ldi	r24, 0x20	; 32
+ 152:	80 93 7c 00 	sts	0x007C, r24
+	ACSR = 0x80;
+ 156:	80 e8       	ldi	r24, 0x80	; 128
+ 158:	80 bf       	out	0x30, r24	; 48
+	ADCSRA = 0x86;		//ADEN=1 --- ADIE=1 --- ADPS2:0 = 1 1 0
+ 15a:	86 e8       	ldi	r24, 0x86	; 134
+ 15c:	80 83       	st	Z, r24
+}
+ 15e:	08 95       	ret
+
+00000160 <spi_init>:
+ * Example Call:	<spi_init()>
+ *
+ */
+void spi_init(void)
+{
+	SPCR = 0x53; //setup SPI
+ 160:	83 e5       	ldi	r24, 0x53	; 83
+ 162:	8c bd       	out	0x2c, r24	; 44
+	SPSR = 0x00; //setup SPI
+ 164:	1d bc       	out	0x2d, r1	; 45
+	SPDR = 0x00;
+ 166:	1e bc       	out	0x2e, r1	; 46
+}
+ 168:	08 95       	ret
+
+0000016a <spi_master_tx_and_rx>:
+ */
+unsigned char spi_master_tx_and_rx (unsigned char data)
+{
+	unsigned char rx_data = 0;
+
+	PORTB = PORTB & 0xFE; // make SS pin low
+ 16a:	28 98       	cbi	0x05, 0	; 5
+	SPDR = data;
+ 16c:	8e bd       	out	0x2e, r24	; 46
+	while(!(SPSR & (1<<SPIF))); //wait for data transmission to complete
+ 16e:	0d b4       	in	r0, 0x2d	; 45
+ 170:	07 fe       	sbrs	r0, 7
+ 172:	fd cf       	rjmp	.-6      	; 0x16e <spi_master_tx_and_rx+0x4>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 174:	86 e6       	ldi	r24, 0x66	; 102
+ 176:	9e e0       	ldi	r25, 0x0E	; 14
+ 178:	01 97       	sbiw	r24, 0x01	; 1
+ 17a:	f1 f7       	brne	.-4      	; 0x178 <spi_master_tx_and_rx+0xe>
+ 17c:	00 00       	nop
+
+	_delay_ms(1); //time for ADC conversion in the slave microcontroller
+	
+	SPDR = 0x50; // send dummy byte to read back data from the slave microcontroller
+ 17e:	80 e5       	ldi	r24, 0x50	; 80
+ 180:	8e bd       	out	0x2e, r24	; 46
+	while(!(SPSR & (1<<SPIF))); //wait for data reception to complete
+ 182:	0d b4       	in	r0, 0x2d	; 45
+ 184:	07 fe       	sbrs	r0, 7
+ 186:	fd cf       	rjmp	.-6      	; 0x182 <spi_master_tx_and_rx+0x18>
+	rx_data = SPDR;
+ 188:	8e b5       	in	r24, 0x2e	; 46
+	PORTB = PORTB | 0x01; // make SS high
+ 18a:	28 9a       	sbi	0x05, 0	; 5
+	return rx_data;
+}
+ 18c:	08 95       	ret
+
+0000018e <ADC_Conversion>:
+ *
+ */
+unsigned char ADC_Conversion(unsigned char Ch)
+{
+	unsigned char a;
+	if(Ch>7)
+ 18e:	88 30       	cpi	r24, 0x08	; 8
+ 190:	18 f0       	brcs	.+6      	; 0x198 <ADC_Conversion+0xa>
+	{
+		ADCSRB = 0x08;
+ 192:	98 e0       	ldi	r25, 0x08	; 8
+ 194:	90 93 7b 00 	sts	0x007B, r25
+	}
+	Ch = Ch & 0x07;
+ 198:	87 70       	andi	r24, 0x07	; 7
+	ADMUX= 0x20| Ch;
+ 19a:	80 62       	ori	r24, 0x20	; 32
+ 19c:	80 93 7c 00 	sts	0x007C, r24
+	ADCSRA = ADCSRA | 0x40;		//Set start conversion bit
+ 1a0:	ea e7       	ldi	r30, 0x7A	; 122
+ 1a2:	f0 e0       	ldi	r31, 0x00	; 0
+ 1a4:	80 81       	ld	r24, Z
+ 1a6:	80 64       	ori	r24, 0x40	; 64
+ 1a8:	80 83       	st	Z, r24
+	while((ADCSRA&0x10)==0);	//Wait for ADC conversion to complete
+ 1aa:	80 81       	ld	r24, Z
+ 1ac:	84 ff       	sbrs	r24, 4
+ 1ae:	fd cf       	rjmp	.-6      	; 0x1aa <ADC_Conversion+0x1c>
+	a=ADCH;
+ 1b0:	80 91 79 00 	lds	r24, 0x0079
+	ADCSRA = ADCSRA|0x10; //clear ADIF (ADC Interrupt Flag) by writing 1 to it
+ 1b4:	ea e7       	ldi	r30, 0x7A	; 122
+ 1b6:	f0 e0       	ldi	r31, 0x00	; 0
+ 1b8:	90 81       	ld	r25, Z
+ 1ba:	90 61       	ori	r25, 0x10	; 16
+ 1bc:	90 83       	st	Z, r25
+	ADCSRB = 0x00;
+ 1be:	10 92 7b 00 	sts	0x007B, r1
+	return a;
+}
+ 1c2:	08 95       	ret
+
+000001c4 <buzzer_pin_config>:
+ *
+ */
+
+void buzzer_pin_config (void)
+{
+	DDRC = DDRC | 0x08;		//Setting PORTC 3 as outpt
+ 1c4:	3b 9a       	sbi	0x07, 3	; 7
+	PORTC = PORTC & 0xF7;		//Setting PORTC 3 logic low to turnoff buzzer
+ 1c6:	43 98       	cbi	0x08, 3	; 8
+}
+ 1c8:	08 95       	ret
+
+000001ca <motion_pin_config>:
+ * Example Call:	<motion_pin_config ()>
+ *
+ */
+void motion_pin_config (void) 
+{
+ DDRA = DDRA | 0x0F;
+ 1ca:	81 b1       	in	r24, 0x01	; 1
+ 1cc:	8f 60       	ori	r24, 0x0F	; 15
+ 1ce:	81 b9       	out	0x01, r24	; 1
+ PORTA = PORTA & 0xF0;
+ 1d0:	82 b1       	in	r24, 0x02	; 2
+ 1d2:	80 7f       	andi	r24, 0xF0	; 240
+ 1d4:	82 b9       	out	0x02, r24	; 2
+ DDRL = DDRL | 0x18;   //Setting PL3 and PL4 pins as output for PWM generation
+ 1d6:	ea e0       	ldi	r30, 0x0A	; 10
+ 1d8:	f1 e0       	ldi	r31, 0x01	; 1
+ 1da:	80 81       	ld	r24, Z
+ 1dc:	88 61       	ori	r24, 0x18	; 24
+ 1de:	80 83       	st	Z, r24
+ PORTL = PORTL | 0x18; //PL3 and PL4 pins are for velocity control using PWM.
+ 1e0:	eb e0       	ldi	r30, 0x0B	; 11
+ 1e2:	f1 e0       	ldi	r31, 0x01	; 1
+ 1e4:	80 81       	ld	r24, Z
+ 1e6:	88 61       	ori	r24, 0x18	; 24
+ 1e8:	80 83       	st	Z, r24
+}
+ 1ea:	08 95       	ret
+
+000001ec <timer5_init>:
+ *
+ */
+
+void timer5_init()
+{
+	TCCR5B = 0x00;	//Stop
+ 1ec:	e1 e2       	ldi	r30, 0x21	; 33
+ 1ee:	f1 e0       	ldi	r31, 0x01	; 1
+ 1f0:	10 82       	st	Z, r1
+	TCNT5H = 0xFF;	//Counter higher 8-bit value to which OCR5xH value is compared with
+ 1f2:	8f ef       	ldi	r24, 0xFF	; 255
+ 1f4:	80 93 25 01 	sts	0x0125, r24
+	TCNT5L = 0x01;	//Counter lower 8-bit value to which OCR5xH value is compared with
+ 1f8:	91 e0       	ldi	r25, 0x01	; 1
+ 1fa:	90 93 24 01 	sts	0x0124, r25
+	OCR5AH = 0x00;	//Output compare register high value for Left Motor
+ 1fe:	10 92 29 01 	sts	0x0129, r1
+	OCR5AL = 0xFF;	//Output compare register low value for Left Motor
+ 202:	80 93 28 01 	sts	0x0128, r24
+	OCR5BH = 0x00;	//Output compare register high value for Right Motor
+ 206:	10 92 2b 01 	sts	0x012B, r1
+	OCR5BL = 0xFF;	//Output compare register low value for Right Motor
+ 20a:	80 93 2a 01 	sts	0x012A, r24
+	OCR5CH = 0x00;	//Output compare register high value for Motor C1
+ 20e:	10 92 2d 01 	sts	0x012D, r1
+	OCR5CL = 0xFF;	//Output compare register low value for Motor C1
+ 212:	80 93 2c 01 	sts	0x012C, r24
+	TCCR5A = 0xA9;	/*{COM5A1=1, COM5A0=0; COM5B1=1, COM5B0=0; COM5C1=1 COM5C0=0}
+ 216:	89 ea       	ldi	r24, 0xA9	; 169
+ 218:	80 93 20 01 	sts	0x0120, r24
+ 					  For Overriding normal port functionality to OCRnA outputs.
+				  	  {WGM51=0, WGM50=1} Along With WGM52 in TCCR5B for Selecting FAST PWM 8-bit Mode*/
+	
+	TCCR5B = 0x0B;	//WGM12=1; CS12=0, CS11=1, CS10=1 (Prescaler=64)
+ 21c:	8b e0       	ldi	r24, 0x0B	; 11
+ 21e:	80 83       	st	Z, r24
+}
+ 220:	08 95       	ret
+
+00000222 <velocity>:
+ *
+ */
+
+void velocity (unsigned char left_motor, unsigned char right_motor)
+{
+	OCR5AL = (unsigned char)left_motor;
+ 222:	80 93 28 01 	sts	0x0128, r24
+	OCR5BL = (unsigned char)right_motor;
+ 226:	60 93 2a 01 	sts	0x012A, r22
+}
+ 22a:	08 95       	ret
+
+0000022c <motion_set>:
+void motion_set (unsigned char Direction)
+{
+ unsigned char PortARestore = 0;
+
+ Direction &= 0x0F; 		// removing upper nibbel for the protection
+ PortARestore = PORTA; 		// reading the PORTA original status
+ 22c:	92 b1       	in	r25, 0x02	; 2
+ PortARestore &= 0xF0; 		// making lower direction nibbel to 0
+ 22e:	90 7f       	andi	r25, 0xF0	; 240
+
+void motion_set (unsigned char Direction)
+{
+ unsigned char PortARestore = 0;
+
+ Direction &= 0x0F; 		// removing upper nibbel for the protection
+ 230:	8f 70       	andi	r24, 0x0F	; 15
+ PortARestore = PORTA; 		// reading the PORTA original status
+ PortARestore &= 0xF0; 		// making lower direction nibbel to 0
+ PortARestore |= Direction; // adding lower nibbel for forward command and restoring the PORTA status
+ 232:	98 2b       	or	r25, r24
+ PORTA = PortARestore; 		// executing the command
+ 234:	92 b9       	out	0x02, r25	; 2
+}
+ 236:	08 95       	ret
+
+00000238 <forward>:
+ *
+ */
+
+void forward (void) //both wheels forward
+{
+  motion_set(0x06);
+ 238:	86 e0       	ldi	r24, 0x06	; 6
+ 23a:	0e 94 16 01 	call	0x22c	; 0x22c <motion_set>
+}
+ 23e:	08 95       	ret
+
+00000240 <back>:
+ * Example Call:	< back()>
+ *
+ */
+void back (void) //both wheels backward
+{
+  motion_set(0x09);
+ 240:	89 e0       	ldi	r24, 0x09	; 9
+ 242:	0e 94 16 01 	call	0x22c	; 0x22c <motion_set>
+}
+ 246:	08 95       	ret
+
+00000248 <left>:
+ *
+ */
+
+void left (void) //Left wheel backward, Right wheel forward
+{
+  motion_set(0x05);
+ 248:	85 e0       	ldi	r24, 0x05	; 5
+ 24a:	0e 94 16 01 	call	0x22c	; 0x22c <motion_set>
+}
+ 24e:	08 95       	ret
+
+00000250 <right>:
+ *
+ */
+
+void right (void) //Left wheel forward, Right wheel backward
+{
+  motion_set(0x0A);
+ 250:	8a e0       	ldi	r24, 0x0A	; 10
+ 252:	0e 94 16 01 	call	0x22c	; 0x22c <motion_set>
+  
+}
+ 256:	08 95       	ret
+
+00000258 <stop>:
+ *
+ */
+
+void stop (void)
+{
+  motion_set(0x00);
+ 258:	80 e0       	ldi	r24, 0x00	; 0
+ 25a:	0e 94 16 01 	call	0x22c	; 0x22c <motion_set>
+}
+ 25e:	08 95       	ret
+
+00000260 <buzzer_on>:
+ *
+ */
+void buzzer_on (void)
+{
+	unsigned char port_restore = 0;
+	port_restore = PINC;
+ 260:	86 b1       	in	r24, 0x06	; 6
+	port_restore = port_restore | 0x08;
+ 262:	88 60       	ori	r24, 0x08	; 8
+	PORTC = port_restore;
+ 264:	88 b9       	out	0x08, r24	; 8
+}
+ 266:	08 95       	ret
+
+00000268 <buzzer_off>:
+ *
+ */
+void buzzer_off (void)
+{
+	unsigned char port_restore = 0;
+	port_restore = PINC;
+ 268:	86 b1       	in	r24, 0x06	; 6
+	port_restore = port_restore & 0xF7;
+ 26a:	87 7f       	andi	r24, 0xF7	; 247
+	PORTC = port_restore;
+ 26c:	88 b9       	out	0x08, r24	; 8
+}
+ 26e:	08 95       	ret
+
+00000270 <uart3_init>:
+ *
+ */
+
+void uart3_init(void)
+{
+	UCSR3B = 0x00; //disable while setting baud rate
+ 270:	e1 e3       	ldi	r30, 0x31	; 49
+ 272:	f1 e0       	ldi	r31, 0x01	; 1
+ 274:	10 82       	st	Z, r1
+	UCSR3A = 0x00;
+ 276:	10 92 30 01 	sts	0x0130, r1
+	UCSR3C = 0x06;
+ 27a:	86 e0       	ldi	r24, 0x06	; 6
+ 27c:	80 93 32 01 	sts	0x0132, r24
+	UBRR3L = 0x5F; //set baud rate lo
+ 280:	8f e5       	ldi	r24, 0x5F	; 95
+ 282:	80 93 34 01 	sts	0x0134, r24
+	UBRR3H = 0x00; //set baud rate hi
+ 286:	10 92 35 01 	sts	0x0135, r1
+	UCSR3B = 0xd8;
+ 28a:	88 ed       	ldi	r24, 0xD8	; 216
+ 28c:	80 83       	st	Z, r24
+}
+ 28e:	08 95       	ret
+
+00000290 <port_init>:
+ * Example Call:	<port_init()>
+ *
+ */
+void port_init()
+{
+	motion_pin_config(); //robot motion pins config
+ 290:	0e 94 e5 00 	call	0x1ca	; 0x1ca <motion_pin_config>
+	buzzer_pin_config();
+ 294:	0e 94 e2 00 	call	0x1c4	; 0x1c4 <buzzer_pin_config>
+	adc_pin_config();
+ 298:	0e 94 9c 00 	call	0x138	; 0x138 <adc_pin_config>
+	spi_pin_config();
+ 29c:	0e 94 95 00 	call	0x12a	; 0x12a <spi_pin_config>
+}
+ 2a0:	08 95       	ret
+
+000002a2 <__vector_54>:
+ * Example Call:	<SIGNAL(SIG_USART3_RECV)>
+ *
+ */
+
+SIGNAL(SIG_USART3_RECV)	// ISR for receive complete interrupt
+{
+ 2a2:	1f 92       	push	r1
+ 2a4:	0f 92       	push	r0
+ 2a6:	0f b6       	in	r0, 0x3f	; 63
+ 2a8:	0f 92       	push	r0
+ 2aa:	0b b6       	in	r0, 0x3b	; 59
+ 2ac:	0f 92       	push	r0
+ 2ae:	11 24       	eor	r1, r1
+ 2b0:	2f 93       	push	r18
+ 2b2:	3f 93       	push	r19
+ 2b4:	4f 93       	push	r20
+ 2b6:	5f 93       	push	r21
+ 2b8:	6f 93       	push	r22
+ 2ba:	7f 93       	push	r23
+ 2bc:	8f 93       	push	r24
+ 2be:	9f 93       	push	r25
+ 2c0:	af 93       	push	r26
+ 2c2:	bf 93       	push	r27
+ 2c4:	ef 93       	push	r30
+ 2c6:	ff 93       	push	r31
+	data = UDR3; 
+ 2c8:	20 91 36 01 	lds	r18, 0x0136
+ 2cc:	20 93 29 02 	sts	0x0229, r18
+
+	if(leftVelocityFlag1 == 1)
+ 2d0:	80 91 0e 02 	lds	r24, 0x020E
+ 2d4:	90 91 0f 02 	lds	r25, 0x020F
+ 2d8:	81 30       	cpi	r24, 0x01	; 1
+ 2da:	91 05       	cpc	r25, r1
+ 2dc:	71 f4       	brne	.+28     	; 0x2fa <__vector_54+0x58>
+	{
+		leftVelocity = data;
+ 2de:	20 93 01 02 	sts	0x0201, r18
+		data = 0x79;
+ 2e2:	89 e7       	ldi	r24, 0x79	; 121
+ 2e4:	80 93 29 02 	sts	0x0229, r24
+		leftVelocityTemp1++;
+ 2e8:	80 91 10 02 	lds	r24, 0x0210
+ 2ec:	90 91 11 02 	lds	r25, 0x0211
+ 2f0:	01 96       	adiw	r24, 0x01	; 1
+ 2f2:	90 93 11 02 	sts	0x0211, r25
+ 2f6:	80 93 10 02 	sts	0x0210, r24
+	}
+	
+	if(leftVelocityFlag2 == 1)
+ 2fa:	80 91 0c 02 	lds	r24, 0x020C
+ 2fe:	90 91 0d 02 	lds	r25, 0x020D
+ 302:	81 30       	cpi	r24, 0x01	; 1
+ 304:	91 05       	cpc	r25, r1
+ 306:	a9 f4       	brne	.+42     	; 0x332 <__vector_54+0x90>
+	{
+		leftVelocity = data ;
+ 308:	80 91 29 02 	lds	r24, 0x0229
+ 30c:	80 93 01 02 	sts	0x0201, r24
+		leftVelocity = leftVelocity * 2;
+ 310:	80 91 01 02 	lds	r24, 0x0201
+ 314:	88 0f       	add	r24, r24
+ 316:	80 93 01 02 	sts	0x0201, r24
+		data = 0x7A;
+ 31a:	8a e7       	ldi	r24, 0x7A	; 122
+ 31c:	80 93 29 02 	sts	0x0229, r24
+		leftVelocityTemp2++;
+ 320:	80 91 0a 02 	lds	r24, 0x020A
+ 324:	90 91 0b 02 	lds	r25, 0x020B
+ 328:	01 96       	adiw	r24, 0x01	; 1
+ 32a:	90 93 0b 02 	sts	0x020B, r25
+ 32e:	80 93 0a 02 	sts	0x020A, r24
+	}
+	
+	if(rightVelocityFlag1 == 1)
+ 332:	80 91 06 02 	lds	r24, 0x0206
+ 336:	90 91 07 02 	lds	r25, 0x0207
+ 33a:	81 30       	cpi	r24, 0x01	; 1
+ 33c:	91 05       	cpc	r25, r1
+ 33e:	81 f4       	brne	.+32     	; 0x360 <__vector_54+0xbe>
+	{
+		rightVelocity = data ;
+ 340:	80 91 29 02 	lds	r24, 0x0229
+ 344:	80 93 00 02 	sts	0x0200, r24
+		data = 0x41;
+ 348:	81 e4       	ldi	r24, 0x41	; 65
+ 34a:	80 93 29 02 	sts	0x0229, r24
+		rightVelocityTemp1++;
+ 34e:	80 91 08 02 	lds	r24, 0x0208
+ 352:	90 91 09 02 	lds	r25, 0x0209
+ 356:	01 96       	adiw	r24, 0x01	; 1
+ 358:	90 93 09 02 	sts	0x0209, r25
+ 35c:	80 93 08 02 	sts	0x0208, r24
+	}
+	
+	if(rightVelocityFlag2 == 1)
+ 360:	80 91 04 02 	lds	r24, 0x0204
+ 364:	90 91 05 02 	lds	r25, 0x0205
+ 368:	81 30       	cpi	r24, 0x01	; 1
+ 36a:	91 05       	cpc	r25, r1
+ 36c:	a9 f4       	brne	.+42     	; 0x398 <__vector_54+0xf6>
+	{
+		rightVelocity = data;
+ 36e:	80 91 29 02 	lds	r24, 0x0229
+ 372:	80 93 00 02 	sts	0x0200, r24
+		rightVelocity = rightVelocity * 2;
+ 376:	80 91 00 02 	lds	r24, 0x0200
+ 37a:	88 0f       	add	r24, r24
+ 37c:	80 93 00 02 	sts	0x0200, r24
+		data = 0x42;
+ 380:	82 e4       	ldi	r24, 0x42	; 66
+ 382:	80 93 29 02 	sts	0x0229, r24
+		rightVelocityTemp2++;
+ 386:	80 91 02 02 	lds	r24, 0x0202
+ 38a:	90 91 03 02 	lds	r25, 0x0203
+ 38e:	01 96       	adiw	r24, 0x01	; 1
+ 390:	90 93 03 02 	sts	0x0203, r25
+ 394:	80 93 02 02 	sts	0x0202, r24
+	}
+	
+	if(data == 0x61) //ASCII value of a
+ 398:	80 91 29 02 	lds	r24, 0x0229
+ 39c:	81 36       	cpi	r24, 0x61	; 97
+ 39e:	11 f4       	brne	.+4      	; 0x3a4 <__vector_54+0x102>
+	{
+		forward();  //forward
+ 3a0:	0e 94 1c 01 	call	0x238	; 0x238 <forward>
+	}
+
+	if(data == 0x62) //ASCII value of b
+ 3a4:	80 91 29 02 	lds	r24, 0x0229
+ 3a8:	82 36       	cpi	r24, 0x62	; 98
+ 3aa:	11 f4       	brne	.+4      	; 0x3b0 <__vector_54+0x10e>
+	{
+		back(); //back
+ 3ac:	0e 94 20 01 	call	0x240	; 0x240 <back>
+	}
+
+	if(data == 0x63) //ASCII value of c
+ 3b0:	80 91 29 02 	lds	r24, 0x0229
+ 3b4:	83 36       	cpi	r24, 0x63	; 99
+ 3b6:	11 f4       	brne	.+4      	; 0x3bc <__vector_54+0x11a>
+	{
+		left();  //left
+ 3b8:	0e 94 24 01 	call	0x248	; 0x248 <left>
+	}
+
+	if(data == 0x64) //ASCII value of d
+ 3bc:	80 91 29 02 	lds	r24, 0x0229
+ 3c0:	84 36       	cpi	r24, 0x64	; 100
+ 3c2:	11 f4       	brne	.+4      	; 0x3c8 <__vector_54+0x126>
+	{
+		right(); //right
+ 3c4:	0e 94 28 01 	call	0x250	; 0x250 <right>
+	}
+
+	if(data == 0x65) //ASCII value of e
+ 3c8:	80 91 29 02 	lds	r24, 0x0229
+ 3cc:	85 36       	cpi	r24, 0x65	; 101
+ 3ce:	11 f4       	brne	.+4      	; 0x3d4 <__vector_54+0x132>
+	{
+		stop(); //stop
+ 3d0:	0e 94 2c 01 	call	0x258	; 0x258 <stop>
+	}
+
+	if(data == 0x66) //ASCII value of f
+ 3d4:	80 91 29 02 	lds	r24, 0x0229
+ 3d8:	86 36       	cpi	r24, 0x66	; 102
+ 3da:	11 f4       	brne	.+4      	; 0x3e0 <__vector_54+0x13e>
+	{
+		buzzer_on();
+ 3dc:	0e 94 30 01 	call	0x260	; 0x260 <buzzer_on>
+	}
+
+	if(data == 0x67) //ASCII value of g
+ 3e0:	80 91 29 02 	lds	r24, 0x0229
+ 3e4:	87 36       	cpi	r24, 0x67	; 103
+ 3e6:	11 f4       	brne	.+4      	; 0x3ec <__vector_54+0x14a>
+	{
+		buzzer_off();
+ 3e8:	0e 94 34 01 	call	0x268	; 0x268 <buzzer_off>
+	}
+	
+
+	if(data == 0x68) //ASCII value of h
+ 3ec:	80 91 29 02 	lds	r24, 0x0229
+ 3f0:	88 36       	cpi	r24, 0x68	; 104
+ 3f2:	21 f4       	brne	.+8      	; 0x3fc <__vector_54+0x15a>
+	{
+		UDR3=proxy1;
+ 3f4:	80 91 1c 02 	lds	r24, 0x021C
+ 3f8:	80 93 36 01 	sts	0x0136, r24
+			  
+	}
+	
+	if(data == 0x69) //ASCII value of i
+ 3fc:	80 91 29 02 	lds	r24, 0x0229
+ 400:	89 36       	cpi	r24, 0x69	; 105
+ 402:	21 f4       	brne	.+8      	; 0x40c <__vector_54+0x16a>
+	{
+		UDR3=proxy2;   
+ 404:	80 91 27 02 	lds	r24, 0x0227
+ 408:	80 93 36 01 	sts	0x0136, r24
+	}
+	
+	if(data == 0x6A) //ASCII value of j
+ 40c:	80 91 29 02 	lds	r24, 0x0229
+ 410:	8a 36       	cpi	r24, 0x6A	; 106
+ 412:	21 f4       	brne	.+8      	; 0x41c <__vector_54+0x17a>
+	{
+		UDR3=proxy3;		   
+ 414:	80 91 1b 02 	lds	r24, 0x021B
+ 418:	80 93 36 01 	sts	0x0136, r24
+	}
+	
+	if(data == 0x6B) //ASCII value of k
+ 41c:	80 91 29 02 	lds	r24, 0x0229
+ 420:	8b 36       	cpi	r24, 0x6B	; 107
+ 422:	21 f4       	brne	.+8      	; 0x42c <__vector_54+0x18a>
+	{
+		UDR3=proxy4;		     
+ 424:	80 91 20 02 	lds	r24, 0x0220
+ 428:	80 93 36 01 	sts	0x0136, r24
+	}
+	
+	if(data == 0x6C) //ASCII value of l
+ 42c:	80 91 29 02 	lds	r24, 0x0229
+ 430:	8c 36       	cpi	r24, 0x6C	; 108
+ 432:	21 f4       	brne	.+8      	; 0x43c <__vector_54+0x19a>
+	{
+		UDR3=proxy5;			  
+ 434:	80 91 2d 02 	lds	r24, 0x022D
+ 438:	80 93 36 01 	sts	0x0136, r24
+	}
+	
+	if(data == 0x6D) //ASCII value of m
+ 43c:	80 91 29 02 	lds	r24, 0x0229
+ 440:	8d 36       	cpi	r24, 0x6D	; 109
+ 442:	21 f4       	brne	.+8      	; 0x44c <__vector_54+0x1aa>
+	{
+		UDR3=proxy6;				    
+ 444:	80 91 28 02 	lds	r24, 0x0228
+ 448:	80 93 36 01 	sts	0x0136, r24
+	}
+	
+	if(data == 0x6E) //ASCII value of n
+ 44c:	80 91 29 02 	lds	r24, 0x0229
+ 450:	8e 36       	cpi	r24, 0x6E	; 110
+ 452:	21 f4       	brne	.+8      	; 0x45c <__vector_54+0x1ba>
+	{
+		UDR3=proxy7;			 
+ 454:	80 91 1d 02 	lds	r24, 0x021D
+ 458:	80 93 36 01 	sts	0x0136, r24
+	}
+	
+	if(data == 0x6F) //ASCII value of o
+ 45c:	80 91 29 02 	lds	r24, 0x0229
+ 460:	8f 36       	cpi	r24, 0x6F	; 111
+ 462:	21 f4       	brne	.+8      	; 0x46c <__vector_54+0x1ca>
+	{
+		UDR3=proxy8;				  
+ 464:	80 91 24 02 	lds	r24, 0x0224
+ 468:	80 93 36 01 	sts	0x0136, r24
+	}
+	
+	if(data == 0x70) //ASCII value of p
+ 46c:	80 91 29 02 	lds	r24, 0x0229
+ 470:	80 37       	cpi	r24, 0x70	; 112
+ 472:	21 f4       	brne	.+8      	; 0x47c <__vector_54+0x1da>
+	{
+		UDR3=white1;				   
+ 474:	80 91 1f 02 	lds	r24, 0x021F
+ 478:	80 93 36 01 	sts	0x0136, r24
+	}
+	
+	if(data == 0x71) //ASCII value of q
+ 47c:	80 91 29 02 	lds	r24, 0x0229
+ 480:	81 37       	cpi	r24, 0x71	; 113
+ 482:	21 f4       	brne	.+8      	; 0x48c <__vector_54+0x1ea>
+	{
+		UDR3=white2; 				      
+ 484:	80 91 31 02 	lds	r24, 0x0231
+ 488:	80 93 36 01 	sts	0x0136, r24
+	}
+					      
+	if(data == 0x72) //ASCII value of r
+ 48c:	80 91 29 02 	lds	r24, 0x0229
+ 490:	82 37       	cpi	r24, 0x72	; 114
+ 492:	21 f4       	brne	.+8      	; 0x49c <__vector_54+0x1fa>
+	{					  
+		UDR3=white3;    				   
+ 494:	80 91 21 02 	lds	r24, 0x0221
+ 498:	80 93 36 01 	sts	0x0136, r24
+	}
+	
+	if(data == 0x73) //ASCII value of s
+ 49c:	80 91 29 02 	lds	r24, 0x0229
+ 4a0:	83 37       	cpi	r24, 0x73	; 115
+ 4a2:	21 f4       	brne	.+8      	; 0x4ac <__vector_54+0x20a>
+	{ 
+		UDR3=SHARP_1;    			   	   
+ 4a4:	80 91 30 02 	lds	r24, 0x0230
+ 4a8:	80 93 36 01 	sts	0x0136, r24
+	}
+	
+	if(data == 0x74) //ASCII value of t
+ 4ac:	80 91 29 02 	lds	r24, 0x0229
+ 4b0:	84 37       	cpi	r24, 0x74	; 116
+ 4b2:	21 f4       	brne	.+8      	; 0x4bc <__vector_54+0x21a>
+	{
+		UDR3=SHARP_2;    
+ 4b4:	80 91 2f 02 	lds	r24, 0x022F
+ 4b8:	80 93 36 01 	sts	0x0136, r24
+	}
+	
+	if(data == 0x75) //ASCII value of u
+ 4bc:	80 91 29 02 	lds	r24, 0x0229
+ 4c0:	85 37       	cpi	r24, 0x75	; 117
+ 4c2:	21 f4       	brne	.+8      	; 0x4cc <__vector_54+0x22a>
+	{
+		UDR3=SHARP_3;  
+ 4c4:	80 91 1a 02 	lds	r24, 0x021A
+ 4c8:	80 93 36 01 	sts	0x0136, r24
+	}
+	
+	if(data == 0x76) //ASCII value of v
+ 4cc:	80 91 29 02 	lds	r24, 0x0229
+ 4d0:	86 37       	cpi	r24, 0x76	; 118
+ 4d2:	21 f4       	brne	.+8      	; 0x4dc <__vector_54+0x23a>
+	{
+		UDR3=SHARP_4;    
+ 4d4:	80 91 2a 02 	lds	r24, 0x022A
+ 4d8:	80 93 36 01 	sts	0x0136, r24
+	}
+	
+	if(data == 0x77) //ASCII value of w
+ 4dc:	80 91 29 02 	lds	r24, 0x0229
+ 4e0:	87 37       	cpi	r24, 0x77	; 119
+ 4e2:	21 f4       	brne	.+8      	; 0x4ec <__vector_54+0x24a>
+	{
+		UDR3=SHARP_5;    
+ 4e4:	80 91 26 02 	lds	r24, 0x0226
+ 4e8:	80 93 36 01 	sts	0x0136, r24
+	}
+	
+	if(data == 0x78) //ASCII value of x
+ 4ec:	80 91 29 02 	lds	r24, 0x0229
+ 4f0:	88 37       	cpi	r24, 0x78	; 120
+ 4f2:	21 f4       	brne	.+8      	; 0x4fc <__vector_54+0x25a>
+	{
+		UDR3=BATT_VALUE;    
+ 4f4:	80 91 2c 02 	lds	r24, 0x022C
+ 4f8:	80 93 36 01 	sts	0x0136, r24
+	}
+	
+	if(data == 0x79) //ASCII value of t
+ 4fc:	80 91 29 02 	lds	r24, 0x0229
+ 500:	89 37       	cpi	r24, 0x79	; 121
+ 502:	a9 f4       	brne	.+42     	; 0x52e <__vector_54+0x28c>
+	{
+		
+		leftVelocityFlag1 = 1;
+ 504:	81 e0       	ldi	r24, 0x01	; 1
+ 506:	90 e0       	ldi	r25, 0x00	; 0
+ 508:	90 93 0f 02 	sts	0x020F, r25
+ 50c:	80 93 0e 02 	sts	0x020E, r24
+		if(leftVelocityTemp1 == 1)
+ 510:	80 91 10 02 	lds	r24, 0x0210
+ 514:	90 91 11 02 	lds	r25, 0x0211
+ 518:	81 30       	cpi	r24, 0x01	; 1
+ 51a:	91 05       	cpc	r25, r1
+ 51c:	41 f4       	brne	.+16     	; 0x52e <__vector_54+0x28c>
+		{
+			leftVelocityFlag1 = 0;
+ 51e:	10 92 0f 02 	sts	0x020F, r1
+ 522:	10 92 0e 02 	sts	0x020E, r1
+			leftVelocityTemp1 = 0;
+ 526:	10 92 11 02 	sts	0x0211, r1
+ 52a:	10 92 10 02 	sts	0x0210, r1
+		}
+	}	
+	
+	if(data == 0x7A)	//ASCII value of z
+ 52e:	80 91 29 02 	lds	r24, 0x0229
+ 532:	8a 37       	cpi	r24, 0x7A	; 122
+ 534:	a9 f4       	brne	.+42     	; 0x560 <__vector_54+0x2be>
+	{
+		leftVelocityFlag2 = 1;
+ 536:	81 e0       	ldi	r24, 0x01	; 1
+ 538:	90 e0       	ldi	r25, 0x00	; 0
+ 53a:	90 93 0d 02 	sts	0x020D, r25
+ 53e:	80 93 0c 02 	sts	0x020C, r24
+		if(leftVelocityTemp2 == 1)
+ 542:	80 91 0a 02 	lds	r24, 0x020A
+ 546:	90 91 0b 02 	lds	r25, 0x020B
+ 54a:	81 30       	cpi	r24, 0x01	; 1
+ 54c:	91 05       	cpc	r25, r1
+ 54e:	41 f4       	brne	.+16     	; 0x560 <__vector_54+0x2be>
+		{
+			leftVelocityFlag2 = 0;
+ 550:	10 92 0d 02 	sts	0x020D, r1
+ 554:	10 92 0c 02 	sts	0x020C, r1
+			leftVelocityTemp2 = 0;
+ 558:	10 92 0b 02 	sts	0x020B, r1
+ 55c:	10 92 0a 02 	sts	0x020A, r1
+		}
+	}
+	
+	if(data == 0x41) //ASCII value of A
+ 560:	80 91 29 02 	lds	r24, 0x0229
+ 564:	81 34       	cpi	r24, 0x41	; 65
+ 566:	d9 f4       	brne	.+54     	; 0x59e <__vector_54+0x2fc>
+	{
+		
+		rightVelocityFlag1 = 1;
+ 568:	81 e0       	ldi	r24, 0x01	; 1
+ 56a:	90 e0       	ldi	r25, 0x00	; 0
+ 56c:	90 93 07 02 	sts	0x0207, r25
+ 570:	80 93 06 02 	sts	0x0206, r24
+		if(rightVelocityTemp1 == 1)
+ 574:	80 91 08 02 	lds	r24, 0x0208
+ 578:	90 91 09 02 	lds	r25, 0x0209
+ 57c:	81 30       	cpi	r24, 0x01	; 1
+ 57e:	91 05       	cpc	r25, r1
+ 580:	71 f4       	brne	.+28     	; 0x59e <__vector_54+0x2fc>
+		{
+			rightVelocityFlag1 = 0;
+ 582:	10 92 07 02 	sts	0x0207, r1
+ 586:	10 92 06 02 	sts	0x0206, r1
+			rightVelocityTemp1 = 0;
+ 58a:	10 92 09 02 	sts	0x0209, r1
+ 58e:	10 92 08 02 	sts	0x0208, r1
+			velocity(leftVelocity, rightVelocity);
+ 592:	80 91 01 02 	lds	r24, 0x0201
+ 596:	60 91 00 02 	lds	r22, 0x0200
+ 59a:	0e 94 11 01 	call	0x222	; 0x222 <velocity>
+		}
+	}
+	
+	if(data == 0x42)
+ 59e:	80 91 29 02 	lds	r24, 0x0229
+ 5a2:	82 34       	cpi	r24, 0x42	; 66
+ 5a4:	d9 f4       	brne	.+54     	; 0x5dc <__vector_54+0x33a>
+	{
+		rightVelocityFlag2 = 1;
+ 5a6:	81 e0       	ldi	r24, 0x01	; 1
+ 5a8:	90 e0       	ldi	r25, 0x00	; 0
+ 5aa:	90 93 05 02 	sts	0x0205, r25
+ 5ae:	80 93 04 02 	sts	0x0204, r24
+		if(rightVelocityTemp2 == 1)
+ 5b2:	80 91 02 02 	lds	r24, 0x0202
+ 5b6:	90 91 03 02 	lds	r25, 0x0203
+ 5ba:	81 30       	cpi	r24, 0x01	; 1
+ 5bc:	91 05       	cpc	r25, r1
+ 5be:	71 f4       	brne	.+28     	; 0x5dc <__vector_54+0x33a>
+		{
+			rightVelocityFlag2 = 0;
+ 5c0:	10 92 05 02 	sts	0x0205, r1
+ 5c4:	10 92 04 02 	sts	0x0204, r1
+			rightVelocityTemp2 = 0;
+ 5c8:	10 92 03 02 	sts	0x0203, r1
+ 5cc:	10 92 02 02 	sts	0x0202, r1
+			velocity(leftVelocity, rightVelocity);
+ 5d0:	80 91 01 02 	lds	r24, 0x0201
+ 5d4:	60 91 00 02 	lds	r22, 0x0200
+ 5d8:	0e 94 11 01 	call	0x222	; 0x222 <velocity>
+		}
+	}
+					    
+		   
+}
+ 5dc:	ff 91       	pop	r31
+ 5de:	ef 91       	pop	r30
+ 5e0:	bf 91       	pop	r27
+ 5e2:	af 91       	pop	r26
+ 5e4:	9f 91       	pop	r25
+ 5e6:	8f 91       	pop	r24
+ 5e8:	7f 91       	pop	r23
+ 5ea:	6f 91       	pop	r22
+ 5ec:	5f 91       	pop	r21
+ 5ee:	4f 91       	pop	r20
+ 5f0:	3f 91       	pop	r19
+ 5f2:	2f 91       	pop	r18
+ 5f4:	0f 90       	pop	r0
+ 5f6:	0b be       	out	0x3b, r0	; 59
+ 5f8:	0f 90       	pop	r0
+ 5fa:	0f be       	out	0x3f, r0	; 63
+ 5fc:	0f 90       	pop	r0
+ 5fe:	1f 90       	pop	r1
+ 600:	18 95       	reti
+
+00000602 <init_devices>:
+ * Example Call:	< init_devices()>
+ *
+ */
+void init_devices()
+{
+ cli(); //Clears the global interrupt
+ 602:	f8 94       	cli
+ port_init();  //Initializes all the ports
+ 604:	0e 94 48 01 	call	0x290	; 0x290 <port_init>
+ uart3_init();
+ 608:	0e 94 38 01 	call	0x270	; 0x270 <uart3_init>
+ spi_init();
+ 60c:	0e 94 b0 00 	call	0x160	; 0x160 <spi_init>
+ timer5_init();
+ 610:	0e 94 f6 00 	call	0x1ec	; 0x1ec <timer5_init>
+ adc_init();
+ 614:	0e 94 a3 00 	call	0x146	; 0x146 <adc_init>
+ sei();   // Enables the global interrupt 
+ 618:	78 94       	sei
+}
+ 61a:	08 95       	ret
+
+0000061c <main>:
+
+//Main Function
+
+int main(void)
+{
+	    init_devices();
+ 61c:	0e 94 01 03 	call	0x602	; 0x602 <init_devices>
+		 proxy8 = spi_master_tx_and_rx(7);                 //Analog value of IR Proximity Sensor 8
+		white1=ADC_Conversion(3);							//Analog value of White Line Sensor1
+		white2=ADC_Conversion(2);							//Analog Value of White Line Sensor2
+		white3=ADC_Conversion(1);							//Analog Value of White Line Sensor3
+       
+		vel = OCR5AL;
+ 620:	c8 e2       	ldi	r28, 0x28	; 40
+ 622:	d1 e0       	ldi	r29, 0x01	; 1
+{
+	    init_devices();
+		 
+	while(1)
+	{
+		SHARP_1 = ADC_Conversion(9);                        //Analog value of sharp range Sensor 1
+ 624:	89 e0       	ldi	r24, 0x09	; 9
+ 626:	0e 94 c7 00 	call	0x18e	; 0x18e <ADC_Conversion>
+ 62a:	80 93 30 02 	sts	0x0230, r24
+		SHARP_2 = ADC_Conversion(10);                       //Analog value of sharp range Sensor 2
+ 62e:	8a e0       	ldi	r24, 0x0A	; 10
+ 630:	0e 94 c7 00 	call	0x18e	; 0x18e <ADC_Conversion>
+ 634:	80 93 2f 02 	sts	0x022F, r24
+		SHARP_3 = ADC_Conversion(11);                       //Analog value of sharp range Sensor 3
+ 638:	8b e0       	ldi	r24, 0x0B	; 11
+ 63a:	0e 94 c7 00 	call	0x18e	; 0x18e <ADC_Conversion>
+ 63e:	80 93 1a 02 	sts	0x021A, r24
+		SHARP_4 = ADC_Conversion(12);                       //Analog value of sharp range Sensor 4
+ 642:	8c e0       	ldi	r24, 0x0C	; 12
+ 644:	0e 94 c7 00 	call	0x18e	; 0x18e <ADC_Conversion>
+ 648:	80 93 2a 02 	sts	0x022A, r24
+		SHARP_5 = ADC_Conversion(13);                       //Analog value of sharp range Sensor 5
+ 64c:	8d e0       	ldi	r24, 0x0D	; 13
+ 64e:	0e 94 c7 00 	call	0x18e	; 0x18e <ADC_Conversion>
+ 652:	80 93 26 02 	sts	0x0226, r24
+		BATT_VALUE = ADC_Conversion(0);                     //Battery voltage status
+ 656:	80 e0       	ldi	r24, 0x00	; 0
+ 658:	0e 94 c7 00 	call	0x18e	; 0x18e <ADC_Conversion>
+ 65c:	80 93 2c 02 	sts	0x022C, r24
+		proxy1=ADC_Conversion(4);							//Analog value of IR Proximity Sensor 1
+ 660:	84 e0       	ldi	r24, 0x04	; 4
+ 662:	0e 94 c7 00 	call	0x18e	; 0x18e <ADC_Conversion>
+ 666:	80 93 1c 02 	sts	0x021C, r24
+		proxy2=ADC_Conversion(5);							//Analog value of IR Proximity Sensor 2
+ 66a:	85 e0       	ldi	r24, 0x05	; 5
+ 66c:	0e 94 c7 00 	call	0x18e	; 0x18e <ADC_Conversion>
+ 670:	80 93 27 02 	sts	0x0227, r24
+		proxy3=ADC_Conversion(6);							//Analog value of IR Proximity Sensor 3
+ 674:	86 e0       	ldi	r24, 0x06	; 6
+ 676:	0e 94 c7 00 	call	0x18e	; 0x18e <ADC_Conversion>
+ 67a:	80 93 1b 02 	sts	0x021B, r24
+		proxy4=ADC_Conversion(7);                           //Analog value of IR Proximity Sensor 4
+ 67e:	87 e0       	ldi	r24, 0x07	; 7
+ 680:	0e 94 c7 00 	call	0x18e	; 0x18e <ADC_Conversion>
+ 684:	80 93 20 02 	sts	0x0220, r24
+		proxy5=ADC_Conversion(8);                           //Analog value of IR Proximity Sensor 5
+ 688:	88 e0       	ldi	r24, 0x08	; 8
+ 68a:	0e 94 c7 00 	call	0x18e	; 0x18e <ADC_Conversion>
+ 68e:	80 93 2d 02 	sts	0x022D, r24
+		 proxy6 = spi_master_tx_and_rx(5);                  //Analog value of IR Proximity Sensor 6
+ 692:	85 e0       	ldi	r24, 0x05	; 5
+ 694:	0e 94 b5 00 	call	0x16a	; 0x16a <spi_master_tx_and_rx>
+ 698:	80 93 28 02 	sts	0x0228, r24
+		 proxy7 = spi_master_tx_and_rx(6);                 //Analog value of IR Proximity Sensor 7
+ 69c:	86 e0       	ldi	r24, 0x06	; 6
+ 69e:	0e 94 b5 00 	call	0x16a	; 0x16a <spi_master_tx_and_rx>
+ 6a2:	80 93 1d 02 	sts	0x021D, r24
+		 proxy8 = spi_master_tx_and_rx(7);                 //Analog value of IR Proximity Sensor 8
+ 6a6:	87 e0       	ldi	r24, 0x07	; 7
+ 6a8:	0e 94 b5 00 	call	0x16a	; 0x16a <spi_master_tx_and_rx>
+ 6ac:	80 93 24 02 	sts	0x0224, r24
+		white1=ADC_Conversion(3);							//Analog value of White Line Sensor1
+ 6b0:	83 e0       	ldi	r24, 0x03	; 3
+ 6b2:	0e 94 c7 00 	call	0x18e	; 0x18e <ADC_Conversion>
+ 6b6:	80 93 1f 02 	sts	0x021F, r24
+		white2=ADC_Conversion(2);							//Analog Value of White Line Sensor2
+ 6ba:	82 e0       	ldi	r24, 0x02	; 2
+ 6bc:	0e 94 c7 00 	call	0x18e	; 0x18e <ADC_Conversion>
+ 6c0:	80 93 31 02 	sts	0x0231, r24
+		white3=ADC_Conversion(1);							//Analog Value of White Line Sensor3
+ 6c4:	81 e0       	ldi	r24, 0x01	; 1
+ 6c6:	0e 94 c7 00 	call	0x18e	; 0x18e <ADC_Conversion>
+ 6ca:	80 93 21 02 	sts	0x0221, r24
+       
+		vel = OCR5AL;
+ 6ce:	88 81       	ld	r24, Y
+ 6d0:	80 93 23 02 	sts	0x0223, r24
+		vel2 = OCR5AL;
+ 6d4:	88 81       	ld	r24, Y
+ 6d6:	80 93 2b 02 	sts	0x022B, r24
+ 6da:	a4 cf       	rjmp	.-184    	; 0x624 <main+0x8>
+
+000006dc <_exit>:
+ 6dc:	f8 94       	cli
+
+000006de <__stop_program>:
+ 6de:	ff cf       	rjmp	.-2      	; 0x6de <__stop_program>
