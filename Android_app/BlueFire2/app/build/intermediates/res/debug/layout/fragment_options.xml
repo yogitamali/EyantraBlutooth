@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.erts_lab.bluefire2.OptionsFragment">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom Mode"
+            android:id="@+id/custom_mode_button"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textAllCaps="false"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:textSize="10dp"
+            android:onClick="customMode"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gesture Mode"
+            android:id="@+id/gesture_mode_button"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/custom_mode_button"
+            android:layout_toEndOf="@+id/custom_mode_button"
+            android:textAllCaps="false"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:textSize="10dp"
+            android:onClick="gestureMode"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sensor"
+            android:id="@+id/sensor_button"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/gesture_mode_button"
+            android:layout_toEndOf="@+id/gesture_mode_button"
+            android:textAllCaps="false"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:textSize="10dp"
+            android:onClick="sensor"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Velocity"
+            android:id="@+id/velocity_button"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/sensor_button"
+            android:layout_toEndOf="@+id/sensor_button"
+            android:textAllCaps="false"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:textSize="10dp"
+            android:onClick="velocity"/>
+
+
+    </GridLayout>
+
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/Abhishek%20Singh/Desktop/eYSIP_2015_Android_Development-master/Android_app/BlueFire2/app/src/main/res/layout/fragment_options.xml -->

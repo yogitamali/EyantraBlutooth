@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+    <!-- Connect -->
+    <item android:id="@+id/action_connect" android:title="@string/action_connect"
+        android:orderInCategory="1" app:showAsAction="never" />
+
+    <!-- Disconnect -->
+    <item android:id="@+id/action_disconnect" android:title="@string/action_disconnect"
+        android:orderInCategory="2" app:showAsAction="never" />
+
+    <!-- Help -->
+    <item android:id="@+id/action_help" android:title="@string/action_help"
+        android:orderInCategory="3" app:showAsAction="never" />
+</menu>
+<!-- From: file:/C:/Users/Abhishek%20Singh/Desktop/eYSIP_2015_Android_Development-master/Android_app/BlueFire2/app/src/main/res/menu/menu_main.xml -->

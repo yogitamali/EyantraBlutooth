@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.erts_lab.bluefire.GestureControl">
+
+    <item
+        android:id="@+id/action_custom_mode"
+        android:title="Custom Mode"
+        app:showAsAction="always"/>
+</menu>
+<!-- From: file:/C:/Users/Abhishek%20Singh/Desktop/eYSIP_2015_Android_Development-master/Android_app/BlueFire2/app/src/main/res/menu/menu_gesture_control.xml -->

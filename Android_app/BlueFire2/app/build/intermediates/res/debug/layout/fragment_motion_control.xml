@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.erts_lab.firebirdv.MotionControl"
+    >
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridLayout"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/forward_arrow"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:src="@drawable/forward" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/left_arrow"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:src="@drawable/left"
+            android:layout_rowSpan="3"
+            android:layout_gravity="center_vertical" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/back_arrow"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:src="@drawable/backward" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/stop"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:src="@drawable/pause" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/right_arrow"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:src="@drawable/right"
+            android:layout_rowSpan="3"
+            android:layout_gravity="center_vertical" />
+    </GridLayout>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/soundon"
+        android:src="@drawable/soundon"
+        android:layout_alignTop="@+id/soundoff"
+        android:layout_alignLeft="@+id/soundoff"
+        android:layout_alignStart="@+id/soundoff" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/soundoff"
+        android:src="@drawable/soundoff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp" />
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/Abhishek%20Singh/Desktop/eYSIP_2015_Android_Development-master/Android_app/BlueFire2/app/src/main/res/layout/fragment_motion_control.xml -->
